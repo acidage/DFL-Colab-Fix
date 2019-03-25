@@ -1,39 +1,13 @@
-![](doc/DFL_welcome.jpg)
+# Welcome to DFL-Colab!
 
-![](doc/logo_cuda.jpg)![](doc/logo_opencl.jpg)![](doc/logo_keras.jpg)![](doc/logo_tensorflow.jpg)![](doc/logo_plaidml.jpg)
+**DFL-Colab it's fork of original DeepFaceLab adapted to using with Google Colab.**
 
-## **DeepFaceLab** is a tool that utilizes deep learning to recognize and swap faces in pictures and videos.
+**Links:**
+* [Original DeepFaceLab repository](https://github.com/iperov/DeepFaceLab)
+* [Google Colab](https://colab.research.google.com/)
+* [YT channel](https://www.youtube.com/channel/UCTKBl8kB6DJ_qLnk1NGDGbQ)
 
-If you like this software, please consider a donation.
+**You can find Colab Notebook here:** [Link](https://colab.research.google.com/github/chervonij/DFL-Colab/blob/master/DFL_Colab_Demo.ipynb)
 
-Goal: RTX 2080 TI
-
-[Donate via Yandex.Money](https://money.yandex.ru/to/41001142318065)
-
-[Donate via Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KK5ZCH4JXWMQS&source=url)
-
-[Donate via Alipay](https://i.loli.net/2019/01/13/5c3ae3829809f.jpg)
-
-bitcoin:31mPd6DxPCzbpCMZk4k1koWAbErSyqkAXr
-
-- ### Manuals:
-
-[English (google translated)](doc/manual_en_google_translated.pdf)
-
-[На русском](doc/manual_ru.pdf)
-
-- ### [Prebuilt windows app](doc/doc_prebuilt_windows_app.md)
-
-- ### [Ready to work facesets](doc/doc_ready_to_work_facesets.md)
-
-- ### [Build and repository info](doc/doc_build_and_repository_info.md)
-
-- ### Communication groups:
-
-(Chinese) QQ group 951138799 for ML/AI experts
-
-[deepfakes (Chinese)](https://deepfakes.com.cn/)
-
-[mrdeepfakes (English)](https://mrdeepfakes.com/forums/)
-
-[reddit (English)](https://www.reddit.com/r/GifFakes/new/)
+### Development in progress.
+**Full usage guide will be coming soon.**

@@ -34,6 +34,9 @@ class device:
             self.backend = device.backend
             self.use_fp16 = use_fp16
             self.cpu_only = cpu_only
+            
+            if self.backend == "tensorflow":
+                nvmlInit()
 
             if not self.cpu_only:
                 self.cpu_only = (self.backend == "tensorflow-cpu")

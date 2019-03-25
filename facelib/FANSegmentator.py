@@ -22,9 +22,10 @@ class FANSegmentator(object):
             self.model.load_weights (str(self.weights_path))
         else:
             if training:
+                io.log_info ("Initializing CA weights...")
                 conv_weights_list = []
                 for layer in self.model.layers:
-                    if type(layer) == keras.layers.Conv2D:
+                    if type(layer) == Conv2D:
                         conv_weights_list += [layer.weights[0]]  # Conv2D kernel_weights
                 CAInitializerMP(conv_weights_list)
         if training:

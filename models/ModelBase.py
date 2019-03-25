@@ -367,14 +367,22 @@ class ModelBase(object):
 
         if self.write_preview_history:
             if self.iter % 10 == 0:
-                preview = self.get_static_preview()
+                preview = self.get_previews()[0][1]
                 preview_lh = ModelBase.get_loss_history_preview(self.loss_history, self.iter, preview.shape[1], preview.shape[2])
                 img = (np.concatenate ( [preview_lh, preview], axis=0 ) * 255).astype(np.uint8)
                 cv2_imwrite ( str (self.preview_history_path / ('%.6d.jpg' %( self.iter) )), img )
 
         self.iter += 1
 
-        return self.iter, iter_time
+        time_str = time.strftime("[%H:%M:%S]")
+        if iter_time >= 10:
+            loss_string = "{0}[#{1:06d}][{2:.5s}s]".format ( time_str, self.iter, '{:0.4f}'.format(iter_time) )
+        else:
+            loss_string = "{0}[#{1:06d}][{2:04d}ms]".format ( time_str, self.iter, int(iter_time*1000) )
+        for (loss_name, loss_value) in losses:
+            loss_string += " %s:%.3f" % (loss_name, loss_value)
+
+        return loss_string
 
     def pass_one_iter(self):
         self.last_sample = self.generate_next_sample()
