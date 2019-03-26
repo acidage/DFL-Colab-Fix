@@ -1,4 +1,0 @@
-mainscripts/Trainer.py
-models/ModelBase.py
-models/Model_SAE/Model.py //lightweight layer padding changed to 'same'
-main.py
