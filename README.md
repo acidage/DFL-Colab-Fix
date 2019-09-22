@@ -4,7 +4,7 @@
 
 **With Google Colaboratory you can freely train your model for 12 hours per session**
 
-**You can find Colab Notebook here:** [Link](https://colab.research.google.com/github/chervonij/DFL-Colab/blob/master/DFL_Colab_Demo.ipynb)
+**You can find Colab Notebook here:** [Link](https://colab.research.google.com/github/acidage/DFL-Colab-FiX/blob/master/DFL_Colab_Fix.ipynb)
 
 **Links:**
 * [Original DeepFaceLab repository](https://github.com/iperov/DeepFaceLab)
